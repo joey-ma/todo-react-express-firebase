@@ -1,0 +1,58 @@
+name: Improvement suggestion
+description: Make a suggestion to improve the content in the application or in the documentation
+title: "[Suggestion]: "
+labels: ["content"]
+assignees:
+  - yoyoyojoe
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this suggestion form! Here, you can make a suggestion to improve the content in the application or report a problem about the technical implementation of within this repo's documentation.
+
+        Please note: 
+        - For questions, ask in Discussions.
+        - Before you file an issue, read the [Contributing guide](https://github.com/yoyoyojoe/press-play/docs/CONTRIBUTING.md) and the [Code of Conduct](https://github.com/yoyoyojoe/press-play/blob/main/docs/CODE_OF_CONDUCT.md).
+        - Check to make sure someone hasn't already opened a similar issue.
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our Contributing Guide and Code of Conduct
+      options:
+        - label: I agree to follow this project's [Contributing Guidelines](https://github.com/yoyoyojoe/press-play/blob/main/docs/CONTRIBUTING.md) and [Code of Conduct](https://github.com/yoyoyojoe/press-play/blob/main/docs/CODE_OF_CONDUCT.md)
+          required: true
+
+  - type: textarea
+    attributes:
+      label: What article / content on Press-Play is affected?
+      description: Please link to the article you'd like to see updated.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: What part(s) of the article would you like to see updated?
+      description: |
+        - Give as much detail as you can to help us understand the change you want to see. 
+        - Why should the docs be changed? What use cases does it support? 
+        - What is the expected outcome?
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: Additional information
+      description: Add any other context or screenshots about the feature request here.
+    validations:
+      required: false
+
+  - type: input
+    id: contact
+    attributes:
+      label: Contact details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
